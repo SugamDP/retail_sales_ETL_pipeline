@@ -317,23 +317,8 @@ git clone <repository-url>
 cd retail_sales_ETL_pipeline
 ```
 
-### 2. Create a virtual environment
+### 2. Install Dependencies
 
-```bash
-python -m venv .venv
-```
-
-Activate it on Windows:
-
-```bash
-.venv\Scripts\activate
-```
-
-### 3. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
 
 The main dependencies are:
 
@@ -343,7 +328,7 @@ sqlalchemy
 pymysql
 ```
 
-### 4. Create the MySQL database
+### 3. Create the MySQL database
 
 Connect to MySQL and create the database:
 
@@ -351,7 +336,7 @@ Connect to MySQL and create the database:
 CREATE DATABASE etl_project;
 ```
 
-### 5. Configure database credentials
+### 4. Configure database credentials
 
 Configure your local MySQL connection with:
 
@@ -365,7 +350,7 @@ DB_PASSWORD=<your_mysql_password>
 
 Database credentials should not be committed to the repository.
 
-### 6. Run the ETL pipeline
+### 5. Run the ETL pipeline
 
 ```bash
 python main.py
